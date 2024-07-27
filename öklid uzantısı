@@ -1,0 +1,9 @@
+import math
+
+def euclidean_distance(p, q):
+    return math.sqrt(sum((pi - qi)**2 for pi, qi in zip(p, q)))
+
+p = [6, 1, 9]
+q = [8, 3, 5]
+distance = euclidean_distance(p, q)
+print(distance)
